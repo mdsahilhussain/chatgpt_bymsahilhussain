@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./chatgpt.css";
 import sendIcon from "../../assets/send.svg";
-import { Asider } from "../../components";
+import { Asider, Chatbox, Chatinput } from "../../components";
 function ChatGPT() {
   const [inputValue, setInputValue] = useState("");
   let loadInterval;
@@ -11,7 +11,10 @@ function ChatGPT() {
       <aside className="container___sidemenu">
         <Asider />
       </aside>
-      <section className="container___chatbox"></section>
+      <section className="container___chatbox">
+        {/* <Chatbox /> */}
+        <Chatinput />
+      </section>
     </div>
   );
 }

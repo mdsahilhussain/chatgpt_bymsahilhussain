@@ -10,9 +10,12 @@
   width: 240px;
   padding: 0.8rem;
   background-color: #202123;
+  height: 100%;
 }
 
 .container___chatbox {
+  height: 100%;
   flex: 1;
   background-color: #343541;
+  position: relative;
 }
